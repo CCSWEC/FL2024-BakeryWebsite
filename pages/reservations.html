@@ -3,33 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservations to be made</title>
+    <title>Scheduling</title>
     <style>
         .rectangle {
             height: 50px;
             width: 100%;
-            background-color: brown;
-        }
-        .calendar{
-            height: 400px;
-            width: 100%;
             background-color: gray;
+        }
+        .calendarContainer{
+            height: 400px;
+            width: 600px;
+            border-radius: 20px;
+            transform: translate(70px, -10px);
+            background-color: gray;
+            padding-left: 10px;
+            display: inline-block;
         }
         .dateBlock{
             height: 50px;
             width: 50px;
-            
             background-color: aquamarine;
         }
-    </style>
+        .userInputContainer{
+            width: 600px;
+            height: 400px;
+            transform: translate(0px, 0px);
+            background-color: gray;
+            border-radius: 20px;
+            padding-right: 10px;
+            display: inline-block;
 
+        }
+    </style>
     
 </head>
 <body>
-    <div class = "rectangle"><h1 style = "color: white;"> Reservation Page</h1></div>
-    <h1> Calendar</h1>
-    <div class = "calendar" style = "left: auto;"> 
-        <div class = "dateBlock"> </div>
+    <div class = "rectangle"><h1 style = "color: white;"> Scheduling</h1></div>
+    <h1> Month - Year </h1>
+
+    <div class = "userInputContainer">
+
     </div>
+
+    <div class = "calendarContainer"> 
+        
+        <div class = "dateBlock"> 1 </div>
+        <div class = "dateBlock"> 2 </div>
+        <div class = "dateBlock"> 3 </div>
+        <div class = "dateBlock"> 4 </div>
+        <div class = "dateBlock"> 5 </div>
+        <div class = "dateBlock"> 6 </div>
+
+    </div>
+
+    
 </body>
 </html>
