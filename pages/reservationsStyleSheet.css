@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+.banner {
+    height: 50px;
+    width: 100%;
+    transform: translate(0px,0px);
+    background-color: gray;
+}
+.calendarContainer{
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    display: inline-block;
+}
+.dateBlock{
+    height: 70px;
+    width: 60px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: aquamarine;
+    display: flex;
+}
+.column {
+    float: left;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.userInputContainer{
+    width: 275.52px;
+    height: 417.6px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    padding: 9.6px;
+
+}
+.header{
+    transform: translate(200, 40);
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type = submit] {
+    width:100%;
+    background-color: gray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+input[type = submit]:hover {
+    background-color: darkgray;
+}

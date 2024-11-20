@@ -3,56 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href = "reservationsStyleSheet.css">
+    
     <title>Scheduling</title>
-    <style>
-        .rectangle {
-            height: 50px;
-            width: 100%;
-            background-color: gray;
-        }
-        .calendarContainer{
-            height: 400px;
-            width: 600px;
-            border-radius: 20px;
-            transform: translate(70px, -10px);
-            background-color: gray;
-            padding-left: 10px;
-            display: inline-block;
-        }
-        .dateBlock{
-            height: 50px;
-            width: 50px;
-            background-color: aquamarine;
-        }
-        .userInputContainer{
-            width: 600px;
-            height: 400px;
-            transform: translate(0px, 0px);
-            background-color: gray;
-            border-radius: 20px;
-            padding-right: 10px;
-            display: inline-block;
-
-        }
-    </style>
     
 </head>
+
 <body>
-    <div class = "rectangle"><h1 style = "color: white;"> Scheduling</h1></div>
-    <h1> Month - Year </h1>
-
-    <div class = "userInputContainer">
-
+    <div class = "banner">
+        <h1 style = "color: white;"> Scheduling</h1>
     </div>
 
-    <div class = "calendarContainer"> 
+    <div class = "header"> 
+        <h1>Month - Year</h1>
+    </div>
+
+    <h1>Reservation</h1>
+
+    <!-- Prompts the user for information -->
+    <div class = "userInputContainer">
+        <form action="/action_page.php"> <!--action_page.php does not exist yet-->
+            <label for = "fname">Name</label>
+            <input type = "text" id = "fname" name = "name" placeholder="Enter your name">
+            
+        </form>
         
-        <div class = "dateBlock"> 1 </div>
-        <div class = "dateBlock"> 2 </div>
-        <div class = "dateBlock"> 3 </div>
-        <div class = "dateBlock"> 4 </div>
-        <div class = "dateBlock"> 5 </div>
-        <div class = "dateBlock"> 6 </div>
+        <h3>Name</h3>
+        <h3>Number of Guests</h3>
+        <h3>Select the date on the calendar</h3>
+        <h3>Time</h3>
+        <h3>Notes</h3>
+    </div>
+
+    <!-- Sets up the calendar visually -->
+    <div class = "calendarContainer"> 
+        <div class = "row">
+            <div class = "column">
+                <div class = "dateBlock"> 1 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 2 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 3 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 4 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 5 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 6 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 7 </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "dateBlock"> 8 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 9 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 10 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 11</div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 12 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 13 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 14 </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "dateBlock"> 15 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 16 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 17 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 18 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 19 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 20 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 21 </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "dateBlock"> 22 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 23 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 24 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 25 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 26 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 27 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 28 </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "dateBlock"> 29 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 30 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 31 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 1 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 2 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 3 </div>
+            </div>
+            <div class = "column">
+                <div class = "dateBlock"> 4 </div>
+            </div>
+        </div>
 
     </div>
 
