@@ -8,8 +8,11 @@
     <link rel="stylesheet" href = "reservationsStyleSheet.css">
     
     <title>Scheduling</title>
-    
+    <script defer src = "reservationsScript.js"></script>
+
 </head>
+
+<!--START OF THE WEBPAGE-->
 
 <body>
         <a href="../index.html">Home</a> 
@@ -17,154 +20,50 @@
         <a href="../pages/menu.html">Menu</a>
         <a href="../pages/reservations.html">Reservations</a> 
     <div class = "banner">
-        <h1 style = "color: white;"> Scheduling</h1>
+        <h1>Scheduling</h1> 
+        <a href="FL2024-BakeryWebsite\index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
     </div>
 
-    <div class = "header"> 
-        <h1>Month - Year</h1>
+    <div class = "pop-up" id="visibility">
+        <label for="choice"> <h2>What are you scheduling with us today?</h2> </label>
+        <input type="submit" id="reservation-choice" value="Reservation">
+        <input type="submit" id="pick-up-choice" value="Pick Up">
+        <input type="submit" id="delivery-choice" value="Delivery">
+
     </div>
 
-    <h1>Reservation</h1>
+    <div class="unselectable">
+    </div>
+
+    <h1 id="reservation-title">Reservation</h1>
+    <h1 id="pick-up-title">Pick Up</h1>
+    <h1 id="delivery-title">Delivery</h1>
+
+    <h1>Month - Year</h1>
 
     <!-- Prompts the user for information -->
     <div class = "userInputContainer">
-        <form action="/action_page.php"> <!--action_page.php does not exist yet-->
-            <label for = "fname">Name</label>
-            <input type = "text" id = "fname" name = "name" placeholder="Enter your name">
+        <form> <!--action_page.php does not exist yet-->
+            <label for= "fname"><h3>Name</h3></label>
+            <input type = "text" id = "fname" name = "name" placeholder="Enter your name" required>
             
+            <label for="fguests"><h3>Number of Guests</h3></label>
+            <input type="number" min="1" max="12" id="fguests" name="numberOfGuests" placeholder="Enter the number of guests" required>
+
+            <label for="fdate"><h3>Select the date on the calendar</h3></label>
+
+            <label for="ftime"><h3>Time</h3></label>
+            <input type="time" id="ftime" min="09:00" max="20:00" name="timeOfArrival" required>
+
+            <label for="fnotes"><h3>Notes</h3></label>
+            <input type="text" id="fnotes" name="otherInformation" placeholder="Important notes for us to know.">
+
+            <input type="submit" id="submition">
         </form>
         
-        <h3>Name</h3>
-        <h3>Number of Guests</h3>
-        <h3>Select the date on the calendar</h3>
-        <h3>Time</h3>
-        <h3>Notes</h3>
     </div>
-
-    <!-- Sets up the calendar visually -->
-    <div class = "calendarContainer"> 
-        <div class = "row">
-            <div class = "column">
-                <div class = "dateBlock"> 1 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 2 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 3 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 4 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 5 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 6 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 7 </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "column">
-                <div class = "dateBlock"> 8 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 9 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 10 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 11</div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 12 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 13 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 14 </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "column">
-                <div class = "dateBlock"> 15 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 16 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 17 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 18 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 19 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 20 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 21 </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "column">
-                <div class = "dateBlock"> 22 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 23 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 24 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 25 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 26 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 27 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 28 </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "column">
-                <div class = "dateBlock"> 29 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 30 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 31 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 1 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 2 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 3 </div>
-            </div>
-            <div class = "column">
-                <div class = "dateBlock"> 4 </div>
-            </div>
-        </div>
-
-    </div>
-
     
 </body>
 </html>
